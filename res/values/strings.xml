@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通讯大全 -->
+    <string name="app_name">安卓易</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+  
+    <!-- 通讯大全 -->
+    <string name="com_food_phone">订餐电话</string>
+    <string name="com_public_service">公共服务</string>
+    <string name="com_carrieroperator">运营商</string>
+    <string name="com_fast_mail_service">快递服务</string>
+    <string name="com_bank_securities">银行证券</string>
+    <string name="com_air_ticket_hotel">机票酒店</string>
+    <string name="com_Insurance_services">保险服务</string>
+    <string name="com_sale_service">售后服务</string>
+    
+    <string name="remove_app">卸载所有软件</string>
+
+
+</resources>

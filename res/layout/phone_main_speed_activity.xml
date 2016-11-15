@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<include layout="@layout/title_activity"/>
+  
+<ProgressBar 
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:id="@+id/phone_main_speed_circle_progress"/>
+<TextView
+        android:id="@+id/phone_main_speed_generic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="GENERIC" 
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/phone_main_speed_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_speed_generic"
+        android:gravity="center_horizontal"
+        android:text="ssss" />
+
+    <ProgressBar
+        android:id="@+id/phone_main_speed_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_speed_version"
+        android:max="100"
+        android:progress="20"
+        android:background="@drawable/progressbar" />
+
+    
+    <TextView android:layout_below="@id/phone_main_speed_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_main_speed_mem_text"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/phone_main_speed_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_speed_mem_text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:text="一键清理"
+        android:background="@drawable/speed_btn"/>
+
+    <ListView
+        android:id="@+id/phone_main_speed_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone_main_speed_choce"
+        android:layout_below="@id/phone_main_speed_clean" >
+    </ListView>
+
+    <CheckBox
+        android:id="@+id/phone_main_speed_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/phone_main_speed_choce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="8dp" 
+        android:text="显示系统进程"
+        android:background="@drawable/speed_btn"/>
+
+</RelativeLayout>

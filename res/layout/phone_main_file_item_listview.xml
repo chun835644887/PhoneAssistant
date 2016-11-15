@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    
+
+    <CheckBox
+        android:id="@+id/file_item_file_check"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/file_item_file_im"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:id="@+id/phone_main_file_item_list_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/file_item_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/file_item_file_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/file_item_file_name"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/file_item_file_filelength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="9sp"
+         />
+</LinearLayout>

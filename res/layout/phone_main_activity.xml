@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_activity" />
+
+    <RelativeLayout
+        android:id="@+id/main_phone_line3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+  
+        <com.example.util.SpeedCircle
+            android:id="@+id/phone_main_speedcircle"
+            android:layout_width="201dp"
+            android:layout_height="201dp"
+            android:layout_centerInParent="true"
+             />
+        <ImageButton
+            android:id="@+id/phone_main_speed_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/speed_button" />
+        
+        
+        <TextView
+            android:id="@+id/phone_main_speedcircle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="rrrrr"
+            android:textSize="40sp" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/phone_main_speedcircle_text"
+            android:text="%"
+            />
+        
+    </RelativeLayout>
+
+    <com.example.util.ReGridView
+        android:id="@+id/phone_main_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boundary_line"
+        android:numColumns="3" />
+
+</LinearLayout>

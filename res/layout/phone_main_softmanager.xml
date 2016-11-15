@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_activity" />
+
+    <com.example.util.MemoryCircle
+        android:id="@+id/menory_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/phone_main_soft_pro_intv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menory_circle"
+        android:text="手机内置内存" />
+
+    <ProgressBar
+        android:id="@+id/phone_main_soft_in_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_soft_pro_intv1"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:textSize="10sp"
+        android:id="@+id/phone_main_soft_intv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/phone_main_soft_in_progress" />
+
+    <TextView
+        android:id="@+id/phone_main_soft_pro_outtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_soft_intv2"
+        android:text="手机外置内存" />
+
+    <ProgressBar
+        android:id="@+id/phone_main_soft_out_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_soft_intv2"
+        android:layout_marginTop="20dp"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+         android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/phone_main_soft_outtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_soft_out_progress" />
+
+    <ListView
+        android:id="@+id/phone_main_soft_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_main_soft_outtv2"
+        android:layout_marginTop="5dp" >
+    </ListView>
+
+</RelativeLayout>
